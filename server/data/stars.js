@@ -1,0 +1,140 @@
+// Star players: "Name|ROLE|overall|flags". Ratings are illustrative estimates, meant to be edited.
+// flags: L = left-hand bat, P = pace, S = spin, A = left-arm bowler,
+//        a = batting all-rounder (bat-heavy), b = bowling all-rounder (bowl-heavy)
+export const STARS = {
+  IND: [
+    'Virat Kohli|BAT|92|', 'Rohit Sharma|BAT|90|', 'Shubman Gill|BAT|89|', 'Yashasvi Jaiswal|BAT|90|L', 'Suryakumar Yadav|BAT|91|',
+    'Shreyas Iyer|BAT|86|', 'Ruturaj Gaikwad|BAT|86|', 'Tilak Varma|BAT|83|L', 'Rinku Singh|BAT|82|L', 'Sai Sudharsan|BAT|83|L', 'Rajat Patidar|BAT|78|',
+    'KL Rahul|WK|87|', 'Rishabh Pant|WK|88|L', 'Sanju Samson|WK|86|', 'Ishan Kishan|WK|82|L', 'Dhruv Jurel|WK|76|',
+    'Jasprit Bumrah|BOWL|95|P', 'Mohammed Siraj|BOWL|86|P', 'Mohammed Shami|BOWL|84|P', 'Arshdeep Singh|BOWL|86|PAL', 'Kuldeep Yadav|BOWL|86|SA',
+    'Varun Chakravarthy|BOWL|84|S', 'Yuzvendra Chahal|BOWL|82|S', 'Ravichandran Ashwin|BOWL|80|S', 'Harshit Rana|BOWL|78|P', 'Prasidh Krishna|BOWL|78|P',
+    'Bhuvneshwar Kumar|BOWL|80|P', 'Deepak Chahar|BOWL|76|P', 'Ravi Bishnoi|BOWL|77|S', 'Mayank Yadav|BOWL|77|P', 'T Natarajan|BOWL|76|PAL',
+    'Akash Deep|BOWL|76|P', 'Mukesh Kumar|BOWL|74|P',
+    'Ravindra Jadeja|AR|88|SAL', 'Hardik Pandya|AR|88|P', 'Axar Patel|AR|85|SAL', 'Washington Sundar|AR|78|SLb', 'Shivam Dube|AR|80|PLa',
+    'Abhishek Sharma|AR|85|SALa', 'Riyan Parag|AR|78|Sa', 'Nitish Kumar Reddy|AR|77|Pa', 'Venkatesh Iyer|AR|77|PLa', 'Shardul Thakur|AR|76|Pb',
+  ],
+  AUS: [
+    'Travis Head|BAT|89|L', 'Steve Smith|BAT|88|', 'Marnus Labuschagne|BAT|82|', 'David Warner|BAT|84|L', 'Usman Khawaja|BAT|80|L', 'Tim David|BAT|82|',
+    'Jake Fraser-McGurk|BAT|76|', 'Chris Lynn|BAT|77|', 'Ashton Turner|BAT|75|', 'Matthew Renshaw|BAT|72|L', 'Jason Sangha|BAT|72|',
+    'Josh Inglis|WK|82|', 'Alex Carey|WK|82|L', 'Josh Philippe|WK|78|',
+    'Pat Cummins|AR|89|Pb', 'Mitchell Marsh|AR|84|Pa', 'Glenn Maxwell|AR|84|Sa', 'Marcus Stoinis|AR|82|Pa', 'Cameron Green|AR|83|Pa', 'Matthew Short|AR|78|Sa',
+    'Aaron Hardie|AR|74|P', 'Cooper Connolly|AR|74|SAL', 'Beau Webster|AR|76|P',
+    'Mitchell Starc|BOWL|89|PAL', 'Josh Hazlewood|BOWL|89|P', 'Nathan Lyon|BOWL|85|S', 'Adam Zampa|BOWL|84|S', 'Spencer Johnson|BOWL|78|PAL',
+    'Nathan Ellis|BOWL|80|P', 'Sean Abbott|BOWL|78|P', 'Xavier Bartlett|BOWL|76|P', 'Jhye Richardson|BOWL|78|P', 'Scott Boland|BOWL|80|P',
+    'Ben Dwarshuis|BOWL|74|PAL', 'Riley Meredith|BOWL|74|P',
+  ],
+  ENG: [
+    'Joe Root|BAT|90|', 'Harry Brook|BAT|88|', 'Ben Duckett|BAT|84|L', 'Zak Crawley|BAT|80|', 'Dan Lawrence|BAT|72|',
+    'Jos Buttler|WK|88|', 'Phil Salt|WK|85|', 'Jonny Bairstow|WK|80|', 'Jamie Smith|WK|80|', 'Tom Banton|WK|74|', 'Sam Billings|WK|76|',
+    'Ben Stokes|AR|87|PLa', 'Liam Livingstone|AR|80|Sa', 'Sam Curran|AR|80|PAL', 'Will Jacks|AR|80|Sa', 'Moeen Ali|AR|76|SLa', 'Chris Woakes|AR|80|Pb',
+    'Liam Dawson|AR|72|SAL', 'Jacob Bethell|AR|78|SALa',
+    'Jofra Archer|BOWL|87|P', 'Mark Wood|BOWL|83|P', 'Adil Rashid|BOWL|84|S', 'Jack Leach|BOWL|76|SAL', 'Brydon Carse|BOWL|78|P', 'Gus Atkinson|BOWL|80|P',
+    'Reece Topley|BOWL|76|PAL', 'Tom Curran|BOWL|76|P', 'Olly Stone|BOWL|74|P',
+  ],
+  RSA: [
+    'Aiden Markram|BAT|84|', 'David Miller|BAT|83|L', 'Tristan Stubbs|BAT|80|', 'Temba Bavuma|BAT|80|', 'Reeza Hendricks|BAT|78|L', 'Rassie van der Dussen|BAT|80|',
+    'Dewald Brevis|BAT|76|', 'Donovan Ferreira|BAT|72|',
+    'Heinrich Klaasen|WK|89|', 'Quinton de Kock|WK|86|L', 'Ryan Rickelton|WK|80|L', 'Kyle Verreynne|WK|74|',
+    'Marco Jansen|AR|84|PALb', 'Wiaan Mulder|AR|78|Pb', 'Corbin Bosch|AR|72|Pb',
+    'Kagiso Rabada|BOWL|89|P', 'Anrich Nortje|BOWL|83|P', 'Keshav Maharaj|BOWL|82|SAL', 'Tabraiz Shamsi|BOWL|78|SA', 'Lungi Ngidi|BOWL|80|P',
+    'Gerald Coetzee|BOWL|78|P', 'Ottniel Baartman|BOWL|72|P', 'Nandre Burger|BOWL|74|PAL',
+  ],
+  NZ: [
+    'Kane Williamson|BAT|87|', 'Devon Conway|BAT|82|L', 'Finn Allen|BAT|79|', 'Mark Chapman|BAT|78|L', 'Will Young|BAT|76|',
+    'Tom Latham|WK|80|L', 'Tom Blundell|WK|76|',
+    'Daryl Mitchell|AR|84|Pa', 'Rachin Ravindra|AR|83|SALa', 'Glenn Phillips|AR|83|Sa', 'Mitchell Santner|AR|82|SAL', 'Michael Bracewell|AR|76|S',
+    'Trent Boult|BOWL|88|PAL', 'Tim Southee|BOWL|82|P', 'Lockie Ferguson|BOWL|82|P', 'Matt Henry|BOWL|84|P', 'Kyle Jamieson|BOWL|80|P',
+    'Adam Milne|BOWL|76|P', 'Ish Sodhi|BOWL|76|S', 'Jacob Duffy|BOWL|76|P', 'Ajaz Patel|BOWL|75|SAL', "Will O'Rourke|BOWL|77|P",
+  ],
+  PAK: [
+    'Babar Azam|BAT|89|', 'Fakhar Zaman|BAT|80|L', 'Saim Ayub|BAT|80|L', 'Abdullah Shafique|BAT|74|', 'Saud Shakeel|BAT|78|L', 'Shan Masood|BAT|76|L', 'Iftikhar Ahmed|BAT|74|S',
+    'Mohammad Rizwan|WK|87|', 'Azam Khan|WK|70|',
+    'Shadab Khan|AR|79|S', 'Imad Wasim|AR|76|SAL', 'Mohammad Nawaz|AR|74|SAL', 'Agha Salman|AR|78|Sa',
+    'Shaheen Afridi|BOWL|89|PAL', 'Naseem Shah|BOWL|84|P', 'Haris Rauf|BOWL|82|P', 'Mohammad Amir|BOWL|77|PAL', 'Abrar Ahmed|BOWL|80|S',
+    'Noman Ali|BOWL|76|SAL', 'Hasan Ali|BOWL|74|P', 'Usama Mir|BOWL|72|S', 'Sufyan Moqim|BOWL|70|SA',
+  ],
+  WI: [
+    'Rovman Powell|BAT|80|', 'Shimron Hetmyer|BAT|80|L', 'Brandon King|BAT|74|', 'Evin Lewis|BAT|77|L', 'Johnson Charles|BAT|74|', 'Keacy Carty|BAT|72|',
+    'Shai Hope|WK|82|', 'Nicholas Pooran|WK|87|L',
+    'Kyle Mayers|AR|76|PLa', 'Andre Russell|AR|85|Pa', 'Sunil Narine|AR|85|SLb', 'Jason Holder|AR|80|Pb', 'Romario Shepherd|AR|77|Pa', 'Roston Chase|AR|74|S',
+    'Alzarri Joseph|BOWL|80|P', 'Shamar Joseph|BOWL|80|P', 'Akeal Hosein|BOWL|80|SAL', 'Gudakesh Motie|BOWL|76|SAL', 'Jayden Seales|BOWL|74|P', 'Obed McCoy|BOWL|74|PAL',
+  ],
+  SL: [
+    'Pathum Nissanka|BAT|80|', 'Charith Asalanka|BAT|78|L', 'Dimuth Karunaratne|BAT|70|L',
+    'Kusal Mendis|WK|80|', 'Kusal Perera|WK|76|L',
+    'Angelo Mathews|AR|74|P', 'Dhananjaya de Silva|AR|76|S', 'Wanindu Hasaranga|AR|82|Sb', 'Kamindu Mendis|AR|78|SALa', 'Dasun Shanaka|AR|74|Pa', 'Dunith Wellalage|AR|74|SAL',
+    'Maheesh Theekshana|BOWL|80|S', 'Matheesha Pathirana|BOWL|82|P', 'Dushmantha Chameera|BOWL|78|P', 'Dilshan Madushanka|BOWL|76|PAL', 'Prabath Jayasuriya|BOWL|74|SAL',
+  ],
+  AFG: [
+    'Rahmanullah Gurbaz|WK|80|', 'Ibrahim Zadran|BAT|78|', 'Najibullah Zadran|BAT|72|L', 'Hashmatullah Shahidi|BAT|74|L',
+    'Mohammad Nabi|AR|78|S', 'Azmatullah Omarzai|AR|78|P', 'Gulbadin Naib|AR|70|P',
+    'Rashid Khan|BOWL|92|S', 'Noor Ahmad|BOWL|82|SA', 'Mujeeb Ur Rahman|BOWL|80|S', 'Fazalhaq Farooqi|BOWL|80|PAL', 'Naveen-ul-Haq|BOWL|76|P',
+  ],
+  BAN: [
+    'Najmul Hossain Shanto|BAT|74|L', 'Tanzid Hasan|BAT|72|L', 'Towhid Hridoy|BAT|72|',
+    'Litton Das|WK|78|', 'Mushfiqur Rahim|WK|76|',
+    'Shakib Al Hasan|AR|84|SAL', 'Mehidy Hasan Miraz|AR|78|S', 'Mahmudullah|AR|72|S', 'Rishad Hossain|AR|70|S',
+    'Mustafizur Rahman|BOWL|82|PAL', 'Taskin Ahmed|BOWL|78|P', 'Shoriful Islam|BOWL|74|PAL', 'Nasum Ahmed|BOWL|72|SAL', 'Tanzim Hasan Sakib|BOWL|70|P',
+  ],
+  IRE: [
+    'Paul Stirling|BAT|74|', 'Harry Tector|BAT|74|', 'Andy Balbirnie|BAT|70|', 'Lorcan Tucker|WK|70|', 'Curtis Campher|AR|70|P', 'Mark Adair|AR|72|P',
+    'George Dockrell|AR|68|SAL', 'Gareth Delany|AR|68|S', 'Josh Little|BOWL|76|PAL', 'Barry McCarthy|BOWL|70|P', 'Craig Young|BOWL|68|P',
+  ],
+  ZIM: [
+    'Craig Ervine|BAT|70|L', 'Brian Bennett|BAT|72|L', 'Sikandar Raza|AR|80|S', 'Sean Williams|AR|74|SAL', 'Ryan Burl|AR|68|S',
+    'Blessing Muzarabani|BOWL|76|P', 'Richard Ngarava|BOWL|72|PAL', 'Tendai Chatara|BOWL|68|P',
+  ],
+  NED: ["Max O'Dowd|BAT|70|L", 'Scott Edwards|WK|72|', 'Bas de Leede|AR|72|P', 'Logan van Beek|BOWL|70|P', 'Roelof van der Merwe|BOWL|68|SAL'],
+  SCO: ['Richie Berrington|AR|70|P', 'Brandon McMullen|AR|70|PL', 'Mark Watt|BOWL|70|SAL', 'Brad Wheal|BOWL|70|P', 'Matthew Cross|WK|66|'],
+  USA: ['Aaron Jones|BAT|72|L', 'Monank Patel|WK|70|', 'Saurabh Netravalkar|BOWL|74|PAL', 'Ali Khan|BOWL|68|P', 'Andries Gous|WK|70|'],
+  CAN: ['Nicholas Kirton|BAT|66|', 'Navneet Dhaliwal|BAT|64|', 'Saad Bin Zafar|AR|64|SAL'],
+  UAE: ['Muhammad Waseem|BAT|72|', 'Vriitya Aravind|WK|66|', 'Junaid Siddique|BOWL|66|PAL', 'Basil Hameed|BAT|64|'],
+  NEP: ['Rohit Paudel|BAT|68|', 'Sandeep Lamichhane|BOWL|76|S', 'Dipendra Singh Airee|AR|70|P', 'Kushal Bhurtel|BAT|68|'],
+  OMA: ['Aqib Ilyas|BAT|64|', 'Kaleemullah|BOWL|64|P', 'Zeeshan Maqsood|AR|66|SAL'],
+  NAM: ['David Wiese|AR|74|P', 'Gerhard Erasmus|AR|68|S', 'Jan Frylinck|AR|66|PAL', 'Ruben Trumpelmann|BOWL|68|PAL'],
+};
+
+export const STARS_W = {
+  AUS: [
+    'Alyssa Healy|WK|88|L', 'Beth Mooney|WK|86|L', 'Phoebe Litchfield|BAT|80|L', 'Meg Lanning|BAT|86|', 'Grace Harris|BAT|76|', 'Georgia Voll|BAT|76|',
+    'Ellyse Perry|AR|88|P', 'Ashleigh Gardner|AR|88|S', 'Tahlia McGrath|AR|84|P', 'Annabel Sutherland|AR|82|P', 'Jess Jonassen|AR|78|SAL', 'Sophie Molineux|AR|76|SAL', 'Heather Graham|AR|72|P',
+    'Megan Schutt|BOWL|84|P', 'Darcie Brown|BOWL|80|P', 'Alana King|BOWL|80|S', 'Georgia Wareham|BOWL|78|S', 'Kim Garth|BOWL|78|P',
+  ],
+  IND: [
+    'Smriti Mandhana|BAT|90|L', 'Shafali Verma|BAT|85|', 'Jemimah Rodrigues|BAT|83|', 'Harleen Deol|BAT|76|', 'Harmanpreet Kaur|AR|86|Sa',
+    'Richa Ghosh|WK|82|', 'Yastika Bhatia|WK|74|L', 'Uma Chetry|WK|70|L',
+    'Deepti Sharma|AR|87|Sb', 'Pooja Vastrakar|AR|78|P', 'Amanjot Kaur|AR|74|P', 'Sneh Rana|AR|74|S', 'Dayalan Hemalatha|AR|72|S', 'Sajeevan Sajana|AR|72|S',
+    'Renuka Singh|BOWL|84|P', 'Radha Yadav|BOWL|78|SAL', 'Shreyanka Patil|BOWL|76|S', 'Arundhati Reddy|BOWL|74|P', 'Titas Sadhu|BOWL|74|P', 'Kranti Gaud|BOWL|74|P', 'Asha Sobhana|BOWL|74|S',
+  ],
+  ENG: [
+    'Heather Knight|BAT|80|', 'Danni Wyatt-Hodge|BAT|80|', 'Maia Bouchier|BAT|76|L', 'Tammy Beaumont|BAT|80|', 'Amy Jones|WK|78|',
+    'Nat Sciver-Brunt|AR|90|P', 'Alice Capsey|AR|78|S', 'Freya Kemp|AR|78|PAL',
+    'Sophie Ecclestone|BOWL|88|SAL', 'Lauren Bell|BOWL|78|P', 'Lauren Filer|BOWL|76|P', 'Charlie Dean|BOWL|78|S', 'Sarah Glenn|BOWL|78|S', 'Em Arlott|BOWL|70|P',
+  ],
+  RSA: [
+    'Laura Wolvaardt|BAT|86|', 'Tazmin Brits|BAT|80|', 'Anneke Bosch|BAT|74|', 'Karabo Meso|WK|70|',
+    'Marizanne Kapp|AR|88|P', 'Chloe Tryon|AR|78|Pa', 'Sune Luus|AR|78|S', 'Nadine de Klerk|AR|78|P',
+    'Ayabonga Khaka|BOWL|76|P', 'Nonkululeko Mlaba|BOWL|78|SAL', 'Masabata Klaas|BOWL|72|P',
+  ],
+  NZ: [
+    'Suzie Bates|BAT|80|', 'Brooke Halliday|BAT|74|', 'Maddy Green|BAT|76|L', 'Georgia Plimmer|BAT|72|', 'Izzy Gaze|WK|72|',
+    'Amelia Kerr|AR|86|S', 'Sophie Devine|AR|85|Pa', 'Melie Kerr|AR|72|S',
+    'Lea Tahuhu|BOWL|78|P', 'Eden Carson|BOWL|74|SAL', 'Jess Kerr|BOWL|76|P',
+  ],
+  WI: [
+    'Qiana Joseph|BAT|70|', 'Shemaine Campbelle|WK|74|',
+    'Hayley Matthews|AR|88|S', 'Chedean Nation|AR|74|', 'Deandra Dottin|AR|78|Pa', 'Stafanie Taylor|AR|80|S', 'Aaliyah Alleyne|AR|70|P',
+    'Afy Fletcher|BOWL|74|S', 'Karishma Ramharack|BOWL|72|S', 'Zaida James|BOWL|70|SAL',
+  ],
+  PAK: [
+    'Sidra Amin|BAT|72|', 'Aliya Riaz|BAT|68|', 'Bismah Maroof|BAT|72|L', 'Muneeba Ali|WK|72|L',
+    'Fatima Sana|AR|76|P', 'Nida Dar|AR|76|S', 'Omaima Sohail|AR|68|',
+    'Sadia Iqbal|BOWL|72|SAL', 'Diana Baig|BOWL|72|P', 'Tuba Hassan|BOWL|70|S',
+  ],
+  SL: [
+    'Harshitha Samarawickrama|BAT|74|', 'Vishmi Gunaratne|BAT|72|',
+    'Chamari Athapaththu|AR|82|SL', 'Kavisha Dilhari|AR|72|S', 'Oshadi Ranasinghe|AR|70|S',
+    'Inoka Ranaweera|BOWL|72|SAL', 'Udeshika Prabodani|BOWL|70|P', 'Sugandika Kumari|BOWL|68|S',
+  ],
+  BAN: ['Nigar Sultana|WK|74|', 'Rubya Haider|BAT|66|', 'Sobhana Mostary|BAT|66|', 'Nahida Akter|BOWL|72|SAL', 'Marufa Akter|BOWL|70|P', 'Rabeya Khan|BOWL|70|S'],
+};
